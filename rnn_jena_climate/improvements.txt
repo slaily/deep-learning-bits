@@ -1,0 +1,7 @@
+ Adjust the number of units in each recurrent layer in the stacked setup. The current choices are largely arbitrary and thus probably suboptimal.
+ Adjust the learning rate used by the RMSprop optimizer.
+ Try using LSTM layers instead of GRU layers.
+ Try using a bigger densely connected regressor on top of the recurrent layers:
+that is, a bigger Dense layer or even a stack of Dense layers.
+ Don’t forget to eventually run the best-performing models (in terms of valida-
+tion MAE) on the test set! Otherwise, you’ll develop architectures that are over- fitting to the validation set.
